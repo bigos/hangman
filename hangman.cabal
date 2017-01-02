@@ -1,14 +1,14 @@
 name:                hangman
 version:             0.1.0.0
-synopsis:            Simple project template from stack
-description:         Please see README.md
-homepage:            https://github.com/githubuser/hangman#readme
+synopsis:            Playing Hangman
+description:         Playing Hangman
+homepage:            Chris N Julie
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2016 Author name here
-category:            Web
+author:              Chris Allen and Julie Moronuki
+maintainer:          haskellbook.com
+copyright:           2016 Chris Allen
+category:            Game
 build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
@@ -16,5 +16,7 @@ extra-source-files:  README.md
 executable hangman
   hs-source-dirs:      src
   main-is:             Main.hs
-  default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
+                     , random
+                     , split
+  default-language:    Haskell2010
